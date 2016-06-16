@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no" />
+		<title>订单详情</title>
+		<link rel="stylesheet" type="text/css" href="../../static/common/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/common/font-awesome-4.6.2/css/font-awesome.min.css" />
+		<link href="../../static/common/mui/css/mui.min.css" rel="stylesheet" />
+		<link href="../../static/common/mui/css/mui.picker.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/common.css?v=20160606" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/order.css?v=20160606" />
+	</head>
+
+	<body>
+		<div class="white-header">
+			<span class="header-back">订单详情</span>
+		</div>
+
+		<div class="order-tap" id="order-tap">
+			<ul>
+				<li class="order-tap-on">
+					<span class="order-tap-name">订单详情</span>
+				</li>
+				<li>
+					<span class="order-tap-name">返佣计划</span>
+				</li>
+			</ul>
+		</div>
+
+		<!--order-detail-->
+		<div id="order-detail">
+
+			<div class="one-title">
+				<span class="one-title-icon"></span>
+				<span class="one-title-name">借款人信息</span>
+			</div>
+
+			<div class="order-borrower">
+				<dl>
+					<dt class="order-borrower-name">真实姓名</dt>
+					<dd class="order-borrower-msg">张一山</dd>
+				</dl>
+				<dl>
+					<dt class="order-borrower-name">身份证号</dt>
+					<dd class="order-borrower-msg">110120199008019078</dd>
+				</dl>
+				<dl>
+					<dt class="order-borrower-name">手机号码</dt>
+					<dd class="order-borrower-msg">13388889999</dd>
+				</dl>
+			</div>
+
+			<div id="order-borrower-msg">
+				<div class="one-title">
+					<span class="one-title-icon"></span>
+					<span class="one-title-name">借款卡信息</span>
+				</div>
+
+				<div class="order-borrower order-borrower-own">
+					<dl>
+						<dt class="order-borrower-owner">持卡人：张山利</dt>
+						<dd class="order-borrower-card">借款卡号：6214 8908 0007 8888</dd>
+					</dl>
+					<dl>
+						<dt class="order-borrower-owner">持卡人：张二利</dt>
+						<dd class="order-borrower-card">借款卡号：6214 8908 0007 8888</dd>
+					</dl>
+				</div>
+
+				<div class="one-title">
+					<span class="one-title-icon"></span>
+					<span class="one-title-name">借款合同信息</span>
+				</div>
+				<div class="order-borrower">
+					<dl>
+						<dt class="order-borrower-name">合同编号</dt>
+						<dd class="order-borrower-msg">13388889999</dd>
+					</dl>
+					<dl>
+						<dt class="order-borrower-name">抵押类型</dt>
+						<dd class="order-borrower-msg">
+							<span>车辆抵押</span>
+							<!--反显-->
+						</dd>
+					</dl>
+					<dl>
+						<dt class="order-borrower-name">业务类型</dt>
+						<dd class="order-borrower-msg">
+							<span>押车</span>
+							<!--反显-->
+						</dd>
+					</dl>
+					<dl>
+						<dt class="order-borrower-name">借款利率</dt>
+						<dd class="order-borrower-msg">12% </dd>
+					</dl>
+					<dl>
+						<dt class="order-borrower-name">返点利率</dt>
+						<dd class="order-borrower-msg">12%</dd>
+					</dl>
+					<dl>
+						<dt class="order-borrower-name">借款金额</dt>
+						<dd class="order-borrower-msg order-borrower-num">1000</dd>
+						<dd class="order-borrower-yun">元</dd>
+					</dl>
+					<dl>
+						<dt class="order-borrower-name">借款期限</dt>
+						<dd class="order-borrower-msg">
+							<span>12个月</span>
+							<!--反显-->
+							<!--待设计稿出图后做效果-->
+						</dd>
+					</dl>
+					<dl>
+						<dt class="order-borrower-name">还款方式</dt>
+						<dd class="order-borrower-msg">
+							<span>先息后本</span>
+							<!--反显-->
+						</dd>
+					</dl>
+					<dl>
+						<dt class="order-borrower-name order-borrower-add">借款起始日期</dt>
+						<dd class="order-borrower-msg">
+							<span>2016-1-1</span>
+						</dd>
+					</dl>
+					<dl>
+						<dt class="order-borrower-name">保证金</dt>
+						<dd class="order-borrower-msg">1000元</dd>
+					</dl>
+					<dl>
+						<dt class="order-borrower-name">返佣方式</dt>
+						<dd class="order-borrower-msg">
+							<span>按月返佣</span>
+						</dd>
+					</dl>
+					<dl>
+						<dt class="order-borrower-name">返佣计划</dt>
+						<dd class="order-borrower-msg">
+							<span>12</span>
+						</dd>
+					</dl>
+
+				</div>
+
+				<div class="order-borrower-remarks order-borrower-remarks1">
+					<p class="remark-name">备注</p>
+					<p class="remark-msg">备注备注备注备注</p>
+				</div>
+			</div>
+
+			<div id="order-borrower-btn" class="order-borrower-btn"><span class="btnup-icon">点击收起</span></div>
+
+			<div class="one-title">
+				<span class="one-title-icon"></span>
+				<span class="one-title-name">订单编号：</span>
+				<span class="one-title-subgray">ABCDE123456789</span>
+			</div>
+
+			<div class="order-link">
+				<div class="order-link-tit">
+					<span class="order-on onback"></span>
+					<span class="order-link-name order-link-redname">还款中(1/4)</span>
+				</div>
+				<div class="order-link-con order-link-redcon">
+					<div class="mb75">借款人还款后，佣金将发放发到您的账户</div>
+					<ul class="order-link-backcon">
+						<li>
+							<span>本金：100000.00元</span><br/>
+							<span>利息：10000.00元</span><br/>
+							<span>佣金：100.34元</span>
+							<p class="order-link-backtime">2016-04-07 12:01:01</p>
+						</li>
+						<li>
+							<span>本金：100000.00元</span><br/>
+							<span>利息：10000.00元</span><br/>
+							<span>佣金：100.34元</span>
+							<p class="order-link-backtime">2016-04-07 12:01:01</p>
+						</li>
+						<li>
+							<span>本金：100000.00元</span><br/>
+							<span>利息：10000.00元</span><br/>
+							<span>佣金：100.34元</span>
+							<p class="order-link-backtime">2016-04-07 12:01:01</p>
+						</li>
+					</ul>
+
+					<div id="order-link-backbtn" class="order-link-backbtn"><i class="backicon backicon-up"></i><span class="order-link-backtxt">点击关闭还款详情</span></div>
+				</div>
+
+				<div class="order-link-tit">
+					<span class="order-min icon-success"></span>
+					<span class="order-link-name order-link-grayname">贷款申请成功</span>
+				</div>
+				<div class="order-link-con order-link-graycon">
+					请保持手机畅通，业务经理稍后会与您联系
+				</div>
+				<div class="order-link-tit">
+					<span class="order-min icon-doing"></span>
+					<span class="order-link-name order-link-grayname">贷款申请中</span>
+				</div>
+				<div class="order-link-con order-link-graycon">
+					请保持手机畅通，业务经理稍后会与您联系
+				</div>
+				<div class="order-link-tit">
+					<span class="order-min icon-produce"></span>
+					<span class="order-link-name order-link-grayname">生成贷款订单</span>
+				</div>
+				<div class="order-link-con order-link-graycon">
+					<span class="order-link--time">2016-04-07   12:01:01</span>
+				</div>
+				<div class="order-link-tit">
+					<span class="order-min icon-value"></span>
+					<span class="order-link-name order-link-grayname">估值完成</span>
+				</div>
+				<div class="order-link-con order-link-graycon">
+					资产估值：1,234.10 <br /> 资产估值：1,234.10 <br />
+					<span class="order-link--time">2016-04-07   12:01:01</span>
+				</div>
+				<div class="order-link-tit">
+					<span class="order-min icon-assets"></span>
+					<span class="order-link-name order-link-grayname">资产评估中</span>
+				</div>
+				<div class="order-link-con order-link-graycon">
+					工作日预计30分钟返回评估结果
+				</div>
+				<div class="order-link-tit">
+					<span class="order-min icon-submit"></span>
+					<span class="order-link-name order-link-grayname">订单提交成功</span>
+				</div>
+				<div class="order-link-con order-link-finish">
+					<span class="order-link--time">2016-04-07   12:01:01</span>
+				</div>
+			</div>
+		</div>
+
+		<!--order-backplan-->
+		<div id="order-backplan" style="display: none;">
+			<div class="order-backplan-tip">
+				<ul>
+					<li>
+						<span class="backplan-tip backplan-tip">12</span>
+						<span class="backplan-name">累计返佣（元）</span>
+					</li>
+					<li>
+						<span class="backplan-tip backplan-tip2">1,234.00</span>
+						<span class="backplan-name">待收返佣（元）</span>
+					</li>
+				</ul>
+			</div>
+			<div class="order-backplan-con">
+				<div class="order-backplan-item">
+					<div class="backplan-header">
+						<span class="backplan-header-name">第四期</span>
+						<span class="backplan-header-date">2015-10-15</span>
+						<span class="backplan-header-status">待还款</span>
+						<i class="backplan-status-light"></i>
+					</div>
+					<div class="backplan-main">
+						<ul>
+							<li>待还本金（元）<span>100.00</span></li>
+							<li>待还利息（元）<span>100.00</span></li>
+							<li class="backplan-blue">待返佣金（元）<span>100.00</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="order-backplan-item">
+					<div class="backplan-header">
+						<span class="backplan-header-name">第四期</span>
+						<span class="backplan-header-date">2015-10-15</span>
+						<span class="backplan-header-status">待还款</span>
+						<i class="backplan-status-serious"></i>
+					</div>
+					<div class="backplan-main">
+						<ul>
+							<li>待还本金（元）<span>100.00</span></li>
+							<li>待还利息（元）<span>100.00</span></li>
+							<li class="backplan-blue">待返佣金（元）<span>100.00</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="order-backplan-item">
+					<div class="backplan-header">
+						<span class="backplan-header-name">第四期</span>
+						<span class="backplan-header-date">2015-10-15</span>
+						<span class="backplan-header-status">待还款</span>
+						<i class="backplan-status-light"></i>
+					</div>
+					<div class="backplan-main">
+						<ul>
+							<li>待还本金（元）<span>100.00</span></li>
+							<li>待还利息（元）<span>100.00</span></li>
+							<li class="backplan-blue">已返佣金（元）<span>100.00</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="order-backplan-item">
+					<div class="backplan-header">
+						<span class="backplan-header-name">第四期</span>
+						<span class="backplan-header-date">2015-10-15</span>
+						<span class="backplan-header-status">已还款</span>
+					</div>
+					<div class="backplan-main">
+						<ul>
+							<li>待还本金（元）<span>100.00</span></li>
+							<li>待还利息（元）<span>100.00</span></li>
+							<li class="backplan-blue">已返佣金（元）<span>100.00</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../../static/common/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../static/common/mui/js/mui.min.js"></script>
+	<script src="../../static/common/mui/js/mui.picker.min.js"></script>
+	<script type="text/javascript" charset="UTF-8">
+		mui.init();
+	</script>
+	<script src="../../static/js/index.js?v=20160606" type="text/javascript" charset="utf-8"></script>
+
+</html>

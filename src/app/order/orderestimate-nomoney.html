@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no" />
+		<title>订单状态详情页</title>
+		<link rel="stylesheet" type="text/css" href="../../static/common/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/common/font-awesome-4.6.2/css/font-awesome.min.css" />
+		<link href="../../static/common/mui/css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/common.css?v=20160606" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/order.css?v=20160606" />
+	</head>
+
+	<body>
+		<div class="white-header">
+			<span class="header-back">订单详情</span>
+		</div>
+
+		<div class="one-title">
+			<span class="one-title-icon"></span>
+			<span class="one-title-name">订单状态：</span>
+			<span class="one-title-subred"><!--估值完成--><!--无效单-->评估中</span>
+		</div>
+
+		<div class="order-content order-constatus">
+			<!--<div class="order-info">
+				<dl>
+					<dt class="order-conname">房产地址：</dt><dd class="order-conmsg">北京市朝阳市朝阳区建国路甲92号市朝阳区建国路甲92号市朝阳区建国路甲92号区建国路甲92号世茂</dd>
+				</dl>
+				<dl>
+					<dt class="order-conname">建筑面积：</dt><dd class="order-conmsg">120.12㎡</dd>
+				</dl>
+				<dl>
+					<dt class="order-conname">规划用途：</dt><dd class="order-conmsg">办公</dd>
+				</dl>
+				<dl>
+					<dt class="order-conname">房产种类：</dt><dd class="order-conmsg">商品房</dd>
+				</dl>
+			</div>-->
+
+			<div class="mui-slider order-slider">
+				<div class="mui-slider-group">
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../../static/imgs/orderbanner.png" />
+							<span class="order-slider-tit">规划用途：办公</span>
+							<span class="order-slider-titbg"></span>
+						</a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../../static/imgs/orderbanner.png" />
+							<span class="order-slider-tit">规划用途：办公</span>
+							<span class="order-slider-titbg"></span>
+						</a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../../static/imgs/orderbanner.png" />
+							<span class="order-slider-tit">规划用途：办公</span>
+							<span class="order-slider-titbg"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="order-conassests">
+				<p class="order-waitmsg">估值信息稍后返回，请耐心等待...</p>
+				<!--<ul>
+					<li>
+						<span class="order-conname">资产估值：</span><span class="order-conmsg">1,234.00万</span>
+					</li>
+					<li>
+						<span class="order-conname">预  授  信：</span><span class="order-conmsg">1,234.00万</span>
+					</li>
+				</ul>
+				<a class="order-btn-serve">查看借款需求</a>-->
+				<!--<a class="order-btn-serve">重新评估</a>-->
+			</div>
+		</div>
+
+		<div class="one-title">
+			<span class="one-title-icon"></span>
+			<span class="one-title-name">订单编号：</span>
+			<span class="one-title-subgray">ABCDE123456789</span>
+		</div>
+
+		<div class="order-link">
+			<div class="order-link-tit">
+				<!--<span class="order-on onestimate"></span>-->
+				<!--<span class="order-on oninvalid"></span>-->
+				<span class="order-on onassets"></span>
+				<span class="order-link-name order-link-redname"><!--估值完成--><!--无效单-->资产评估中</span>
+			</div>
+			<div class="order-link-con order-link-redcon">
+				<!--无效原因：无效无效无效无效无效无效无效无效无效<br />
+				备注: 无效无效无效无效无效无<br />-->
+				工作日预计30分钟返回评估结果
+				<!--<span class="order-link--time">2016-04-07   12:01:01</span>-->
+			</div>
+
+			<!--<div class="order-link-tit">
+				<span class="order-min icon-assets"></span>
+				<span class="order-link-name order-link-grayname">资产评估中</span>
+			</div>
+			<div class="order-link-con order-link-graycon">
+				工作日预计30分钟返回评估结果
+			</div>-->
+			<div class="order-link-tit">
+				<span class="order-min icon-submit"></span>
+				<span class="order-link-name order-link-grayname">订单提交成功</span>
+			</div>
+			<div class="order-link-con order-link-finish">
+				<span class="order-link--time">2016-04-07   12:01:01</span>
+			</div>
+		</div>
+
+	</body>
+	<script src="../../static/common/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../static/common/mui/js/mui.min.js"></script>
+	<script type="text/javascript" charset="UTF-8">
+		mui.init();
+	</script>
+
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no" />
+		<title>录入借款详情</title>
+		<link rel="stylesheet" type="text/css" href="../../static/common/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/common/font-awesome-4.6.2/css/font-awesome.min.css" />
+		<link href="../../static/common/mui/css/mui.min.css" rel="stylesheet" />
+		<link href="../../static/common/mui/css/mui.picker.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/common.css?v=20160606" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/order.css?v=20160606" />
+	</head>
+
+	<body>
+		<div class="white-header">
+			<span class="header-back">录入借款详情</span>
+		</div>
+
+		<div class="one-title">
+			<span class="one-title-icon"></span>
+			<span class="one-title-name">借款人信息</span>
+		</div>
+
+		<div class="order-borrower">
+			<dl>
+				<dt class="order-borrower-name">真实姓名</dt>
+				<dd class="order-borrower-msg">张一山</dd>
+			</dl>
+			<dl>
+				<dt class="order-borrower-name">身份证号</dt>
+				<dd class="order-borrower-msg"><input type="text" placeholder="请输入" /></dd>
+			</dl>
+			<dl>
+				<dt class="order-borrower-name">手机号码</dt>
+				<dd class="order-borrower-msg"><input type="text" placeholder="请输入" /> </dd>
+			</dl>
+		</div>
+
+		<div class="one-title">
+			<span class="one-title-icon"></span>
+			<span class="one-title-name">借款卡信息</span>
+		</div>
+		<!--<div class="order-borrower">
+			<dl>
+				<dt class="order-borrower-name order-borrower-add">添加借款卡信息</dt><dd class="order-borrower-msg"><a href="#" class="order-borrower-addicon"></a></dd>
+			</dl>	
+		</div>-->
+
+		<!--<div class="order-borrower order-borrower-own">
+			<dl>
+				<dt class="order-borrower-owner">持卡人：张山利</dt>
+				<dd class="order-borrower-card">借款卡号：6214 8908 0007 8888</dd>
+			</dl>
+			<dl>
+				<dt class="order-borrower-owner">持卡人：张二利</dt>
+				<dd class="order-borrower-card">借款卡号：6214 8908 0007 8888</dd>
+			</dl>
+		</div>-->
+
+		<div class="order-borrower order-borrower-own">
+			<div class="order-borrower-owndel">
+				<div class="order-borrwer-delicon"></div>
+				<div class="order-borrower-row noborder">
+					<dl>
+						<dt class="order-borrower-owner">持卡人：张山利</dt>
+						<dd class="order-borrower-card">借款卡号：6214 8908 0007 8888</dd>
+					</dl>
+					<span class="order-borrower-del">删除</span>
+					<i class="arrow-gray order-borrower-arrow"></i>
+				</div>
+			</div>
+			<div class="order-borrower-owndel">
+				<div class="order-borrwer-delicon"></div>
+				<div class="order-borrower-row">
+					<dl>
+						<dt class="order-borrower-owner">持卡人：张山利</dt>
+						<dd class="order-borrower-card">借款卡号：6214 8908 0007 8888</dd>
+					</dl>
+					<span class="order-borrower-del">删除</span>
+					<i class="arrow-gray order-borrower-arrow"></i>
+				</div>
+			</div>
+		</div>
+
+		<div class="one-title">
+			<span class="one-title-icon"></span>
+			<span class="one-title-name">借款合同信息</span>
+		</div>
+		<div class="order-borrower">
+			<dl>
+				<dt class="order-borrower-name">合同编号</dt>
+				<dd class="order-borrower-msg"><input type="text" placeholder="请输入" /></dd>
+			</dl>
+			<dl>
+				<dt class="order-borrower-name">抵押类型</dt>
+				<dd class="order-borrower-msg" id="mortgage-type">
+					<span>车辆抵押</span>
+					<!--反显-->
+					<i class="arrow-gray"></i>
+				</dd>
+			</dl>
+			<dl>
+				<dt class="order-borrower-name">业务类型</dt>
+				<dd class="order-borrower-msg" id="business-type">
+					<span>押车</span>
+					<!--反显-->
+					<i class="arrow-gray"></i>
+				</dd>
+			</dl>
+			<dl>
+				<dt class="order-borrower-name">借款利率</dt>
+				<dd class="order-borrower-msg"><input type="text" placeholder="请输入" value="0%~30%" /> </dd>
+			</dl>
+			<dl>
+				<dt class="order-borrower-name">返点利率</dt>
+				<dd class="order-borrower-msg"><input type="text" placeholder="请输入" value="0%~30%" /> </dd>
+			</dl>
+			<dl>
+				<dt class="order-borrower-name">借款金额</dt>
+				<dd class="order-borrower-msg order-borrower-num"><input type="text" placeholder="请输入" value="100~50,000,000" /></dd>
+				<dd class="order-borrower-yun">元</dd>
+			</dl>
+			<dl>
+				<dt class="order-borrower-name">借款期限</dt>
+				<dd class="order-borrower-msg">
+					<span>12个月</span>
+					<!--反显-->
+					<!--待设计稿出图后做效果-->
+					<i class="arrow-gray"></i>
+				</dd>
+			</dl>
+			<dl>
+				<dt class="order-borrower-name">还款方式</dt>
+				<dd class="order-borrower-msg" id="loan-type">
+					<span>先息后本</span>
+					<!--反显-->
+					<i class="arrow-gray"></i>
+				</dd>
+			</dl>
+			<dl>
+				<dt class="order-borrower-name order-borrower-add">借款起始日期</dt>
+				<dd class="order-borrower-msg" id="loan-date">
+					<span></span>
+					<!--今天-->
+					<i class="arrow-gray"></i>
+				</dd>
+			</dl>
+			<dl>
+				<dt class="order-borrower-name">保证金</dt>
+				<dd class="order-borrower-msg"><input type="text" placeholder="请输入" /> </dd>
+			</dl>
+			<dl>
+				<dt class="order-borrower-name">返佣方式</dt>
+				<dd class="order-borrower-msg" id="return-way">
+					<span>按月返佣</span>
+					<i class="arrow-gray"></i>
+				</dd>
+			</dl>
+			<dl>
+				<dt class="order-borrower-name">返佣计划</dt>
+				<dd class="order-borrower-msg" id="return-way">
+					<span>12</span>
+					<!--待设计稿出图后做效果 与借款期限一致-->
+					<i class="arrow-gray"></i>
+				</dd>
+			</dl>
+
+		</div>
+
+		<div class="order-borrower-remarks">
+			<p class="remark-name">备注</p>
+			<textarea placeholder="请输入（选填）"></textarea>
+		</div>
+
+		<div class="order-btn-gap"><input type="button" class="order-btn-gray" value="资料无误  马上提交" /></div>
+		<div class="order-btn-gap"><input type="button" class="order-btn-blue" value="资料无误  马上提交" /></div>
+
+		<div class="order-serve-tel">
+			<div class="order-serve-bg">
+				400-999-9898<br /> 工作日:9:00~17:00
+			</div>
+		</div>
+
+	</body>
+	<script src="../../static/common/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../static/common/mui/js/mui.min.js"></script>
+	<script src="../../static/common/mui/js/mui.picker.min.js"></script>
+	<script type="text/javascript" charset="UTF-8">
+		mui.init();
+	</script>
+	<script src="../../static/js/index.js?v=20160606" type="text/javascript" charset="utf-8"></script>
+
+</html>

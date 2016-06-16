@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no" />
+		<title>订单详情</title>
+		<link rel="stylesheet" type="text/css" href="../../static/common/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/common/font-awesome-4.6.2/css/font-awesome.min.css" />
+		<link href="../../static/common/mui/css/mui.min.css" rel="stylesheet" />
+		<link href="../../static/common/mui/css/mui.picker.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/common.css?v=20160606" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/order.css?v=20160606" />
+	</head>
+
+	<body>
+		<div class="white-header">
+			<span class="header-back">添加借款卡信息</span>
+		</div>
+		<div class="order-borrower mt20 mb60">
+			<dl>
+				<dt class="order-borrower-name">持卡人</dt>
+				<dd class="order-borrower-msg"><input type="text" placeholder="请输入持卡人" /></dd>
+			</dl>
+			<dl>
+				<dt class="order-borrower-name">借款卡号</dt>
+				<dd class="order-borrower-msg"><input type="text" placeholder="请输入借款卡号" /></dd>
+			</dl>
+		</div>
+		<div class="order-btn-gap"><input type="button" class="order-btn-gray" value="确定" /></div>
+		<div class="order-btn-gap"><input type="button" class="order-btn-blue" value="确定" /></div>
+
+	</body>
+	<script src="../../static/common/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../static/common/mui/js/mui.min.js"></script>
+	<script src="../../static/common/mui/js/mui.picker.min.js"></script>
+	<script type="text/javascript" charset="UTF-8">
+		mui.init();
+	</script>
+	<script src="../../static/js/index.js?v=20160606" type="text/javascript" charset="utf-8"></script>
+
+</html>

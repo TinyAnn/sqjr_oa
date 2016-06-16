@@ -1,0 +1,152 @@
+.mui-content{
+	padding-bottom:50px;
+}
+.white-header{
+	text-align: center;
+	height:88px;
+	line-height: 88px;
+	border-bottom: 1px solid #DEDEDE;
+	background: #fff;
+	font-size: 36px;
+	color: #444444;
+}
+.header-back{
+	position: absolute;
+	top: 28px;
+	left: 34px;
+	background: url(../imgs/icons/arrow-left.png) no-repeat;
+	width: 19px;
+	height: 36px;
+}
+.portraitWraper{
+	position: relative;
+	height: 785px;
+	background: -webkit-gradient(linear,center top,center bottom,from(#70b0ff), to(#28a6f4));
+	background: gradient(linear,center top,center bottom,from(#70b0ff), to(#28a6f4));
+}
+.portraitIcon{
+	position: absolute;
+	top:270px;
+	left: 0px;
+	right: 0px;
+	margin: 0 auto;
+	width: 220px;
+	height: 220px;
+	text-align: center;
+	border-radius: 100%;
+	border: 75px solid #70b9fb;
+	box-sizing: content-box;
+	-webkit-box-shadow: 0px 0px 0px 100px #6ab2fd;
+	        box-shadow: 0px 0px 0px 100px #6ab2fd;
+}
+.portraitImg{
+	width: 220px;
+	height: 220px;
+	border-radius: 100%;
+	border:5px solid #42c0f7;
+	position: absolute;
+    left: 0;
+}
+.subTitle{
+	top: 135px;
+	font-size: 26px;
+}
+.nameTitle{
+	top: 216px;
+	font-size: 60px;
+	z-index: 1;
+}
+.subTitle,
+.nameTitle{
+	position: absolute;
+	color: #fff;
+	text-align: center;
+	width: 100%;
+}
+.portraitBg{
+	position: absolute;
+	height: 250px;
+	width: 250px;
+    left: -15px;
+    top: -15px;
+	background-image: url('../imgs/header-bg.png');
+	-webkit-animation:rotate360 2s infinite linear;
+	        animation:rotate360 2s infinite linear;
+}
+.portraitIcon:before{
+	content: url(../imgs/clclcl.png);
+	position: absolute;
+    top: -69px;
+    left: 210px;
+}
+@-webkit-keyframes rotate360
+{
+	from {
+		-webkit-transform: rotateZ(0deg);
+		        transform: rotateZ(0deg);
+	}
+	to {
+		-webkit-transform: rotateZ(360deg);
+		        transform: rotateZ(360deg);
+	}
+}
+@keyframes rotate360
+{
+	from {
+		-webkit-transform: rotateZ(0deg);
+		        transform: rotateZ(0deg);
+	}
+	to {
+		-webkit-transform: rotateZ(360deg);
+		        transform: rotateZ(360deg);
+	}
+}
+.btnWraper{
+    font-size: 34px;
+    color: #0ea3f0;
+    background-color: #fff;
+    line-height: 88px;
+    border-radius: 44px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -44px;
+    margin: 0 auto;
+    width: 540px;
+    -webkit-box-shadow: 0px 0px 20px 10px #b3ddf7;
+	        box-shadow: 0px 0px 20px 10px #b3ddf7;
+}
+.icon{
+	display: inline-block;
+	vertical-align: middle;
+	height:40px;
+	width: 40px;
+	background: url(../imgs/icons/phone.png) no-repeat center;
+}
+.icon-phone{
+	margin:0 30px 0 50px;
+}
+.callNum{
+	padding-left: 50px;
+	border-left: 1px solid #0ea3f0;
+}
+.btmWraper{
+	margin: 110px auto 0px;
+	width: 620px;
+	border-radius: 5px;
+	border:1px dashed #b5b5b5;
+	text-align: center;
+	padding:20px 10px 40px;
+}
+.btmWraper h4,
+.btmWraper p{
+	font-size: 30px;
+	color: #b5b5b5;
+	
+}
+.btmWraper p{
+	line-height: 50px;
+}
+.btmWraper h4{
+	line-height: 90px;
+}
