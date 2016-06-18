@@ -1,0 +1,146 @@
+.agentWraper, .btmIcon, .btmbox, .icon {
+  display: inline-block; }
+
+::-webkit-scrollbar {
+  height: 0;
+  width: 0; }
+
+body {
+  background-color: #efeff4;
+  margin-bottom: 200px; }
+
+.announce {
+  padding-left: 24px;
+  background-color: #FFF; }
+
+.announceList {
+  padding-left: 0;
+  font-size: 24px;
+  margin: 0; }
+
+.announceLi {
+  list-style: none;
+  line-height: 60px; }
+
+.icon {
+  vertical-align: middle;
+  margin-right: 5px; }
+
+.icon-horn {
+  height: 22px;
+  width: 24px;
+  background: url(../imgs/icons/horn.png); }
+
+.contentbox {
+  margin: 0 24px 20px; }
+
+.mortgageCard {
+  background-color: #fff;
+  text-align: center;
+  line-height: 1;
+  margin-top: 22px;
+  padding-bottom: 20px;
+  position: relative; }
+
+.mortgageCard:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 0;
+  right: 0;
+  width: 235px;
+  margin: 0 auto;
+  border-bottom: 8px solid #fff;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent; }
+
+.mortgageCard h3 {
+  padding: 18px 0 30px;
+  font-size: 30px;
+  color: #fc8800; }
+
+.mortgageCard2 h3 {
+  color: #0ea3f0; }
+
+.mortgage-rate {
+  font-size: 36px; }
+
+.rate {
+  font-size: 90px; }
+
+.rate-sub {
+  padding-top: 25px;
+  padding-bottom: 23px;
+  font-size: 24px; }
+
+.card-btn {
+  height: 88px;
+  line-height: 88px;
+  width: 540px;
+  margin: 0 auto;
+  background-color: #fc8800;
+  color: #fff;
+  font-size: 40px;
+  border-radius: 10px; }
+
+.mortgageCard2 .card-btn {
+  background-color: #0ea3f0; }
+
+.icon-house {
+  height: 36px;
+  width: 41px;
+  background: url(../imgs/icons/house.png);
+  margin-right: 10px;
+  vertical-align: -4%; }
+
+.commission, .fixedBottom {
+  background-color: #fff;
+  text-align: center; }
+
+.commission {
+  line-height: 70px;
+  border-bottom: 1px solid #e7e7e7; }
+
+.agentWraper {
+  color: #444;
+  font-size: 26px; }
+
+.fa-icon {
+  font-size: 10px;
+  color: #bfbfbf;
+  vertical-align: super;
+  margin: 0 15px; }
+
+.fixedBottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 22px;
+  height: 180px; }
+
+.btmbox {
+  text-align: center;
+  width: 30%; }
+
+.btmbox0 {
+  float: left; }
+
+.btmbox2 {
+  float: right; }
+
+.btmIcon {
+  height: 50px;
+  width: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 10px 0; }
+
+.btmIcon0 {
+  background-image: url(../imgs/icons/house2.png); }
+
+.btmIcon1 {
+  background-image: url(../imgs/icons/person.png); }
+
+.btmIcon2 {
+  background-image: url(../imgs/icons/assistant.png); }

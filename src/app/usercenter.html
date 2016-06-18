@@ -1,145 +1,134 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no" />
-		<title>我的首页-新用户默认</title>
-		<link rel="stylesheet" type="text/css" href="../static/common/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="../static/common/font-awesome-4.6.2/css/font-awesome.min.css" />
-		<link href="../static/common/mui/css/mui.min.css" rel="stylesheet" />
-		<link rel="stylesheet" type="text/css" href="../static/css/user.css?v=20160606" />
-		<link rel="stylesheet" type="text/css" href="../static/css/common.css?v=20160606" />
-	</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no" />
+    <title>我的首页-新用户默认</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/user.css" />
+</head>
 
-	<body>
-		<div class="user-header">
-			<i class="setting"></i>
-			<a href="#" class="head-info">
-				<div class="head-img">
-					<img src="../static/imgs/my-header.png" />
-				</div>
-				<div class="my-person-info">
-					<p class="my-head-name">昵称</p>
-					<p class="my-head-signature">签名：快人一步，快人一路......</p>
-				</div>
-				<i class="my-head-arrow"></i>
-			</a>
-		</div>
-
-		<div class="user-order">
-			<ul>
-				<li class="user-order-head">
-					<a href="#">
-						<div class="user-title-name">我的订单</div>
-						<div class="fr"><span class="user-title-sub">查看全部订单</span><i class="arrow-gray"></i></div>
-					</a>
-				</li>
-				<li class="user-order-content" style="display: none;">
-					<a href="#" class="user-order-two">
-						<span class="orderimg assess-img"></span>
-						<span class="order-name">评估订单</span>
-					</a>
-					<a href="#" class="user-order-two">
-						<span class="orderimg loan-img"></span>
-						<span class="order-name">贷款订单</span>
-					</a>
-				</li>
-				<li class="user-order-content">
-					<a href="#" class="user-order-three">
-						<span class="orderimg assess-img"></span>
-						<span class="order-name">评估订单</span>
-					</a>
-					<a href="#" class="user-order-three">
-						<span class="orderimg loan-img"></span>
-						<span class="order-name">贷款订单</span>
-					</a>
-					<a href="#" class="user-order-three">
-						<span class="orderimg qiang-img"></span>
-						<span class="order-name">我的抢单</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-
-		<div class="user-assets">
-			<ul>
-				<li class="user-assets-head">
-					<div class="user-title-name">我的资产</div>
-					<a href="#" class="btn-withdraw">提现</a>
-				</li>
-				<li>
-					<a href="#">
-						<div class="user-title-name">账户余额<i class="ml20 cred">0.00</i></div><i class="fr mt40 arrow-gray"></i>
-					</a>
-				</li>
-			</ul>
-			<div class="user-assets-return clearfix">
-				<a href="#">
-					<span class="user-assets-num">0.00</span><br/>
-					<span class="user-assets-name">累计返佣</span>
-				</a>
-				<a href="#" class="user-assets-line">
-					<span class="user-assets-num">0.00</span><br/>
-					<span class="user-assets-name">代收返佣</span>
-				</a>
-				</li>
-			</div>
-		</div>
-
-		<div class="user-link">
-			<a href="#">
-				<div class="user-title-name">账单记录</div>
-				<div class="fr"><i class="arrow-gray"></i></div>
-			</a>
-		</div>
-		<div class="user-link">
-			<a href="#">
-				<div class="user-title-name">我的提现卡</div>
-				<div class="fr"><span class="user-title-sub">工商银行(1234)</span><i class="arrow-gray"></i></div>
-			</a>
-		</div>
-		<div class="user-link">
-			<a href="#">
-				<div class="user-title-name">云单中心</div>
-				<div class="fr"><span class="user-title-sub">3</span><i class="arrow-gray"></i></div>
-			</a>
-		</div>
-		<div class="user-link mb135">
-			<a href="#">
-				<div class="user-title-name">我的助理</div>
-				<div class="fr"><span class="user-title-sub">暗号2016-0102-33485</span><i class="arrow-gray"></i></div>
-			</a>
-		</div>
-
-		<div class="mask dn"></div>
-		<div class="pupView dn">
-			<div class="pupimg"></div>
-			<a href="#" class="pupView-btn">登录赚钱</a>
-			<a href="#" class="pupView-reg">注册拿钱去放贷</a>
-		</div>
-
-		<div class="fixedBottom">
-			<div class="btmbox btmbox0">
-				<i class="btmIcon btmIcon0"></i>
-				<div>云融</div>
-			</div>
-			<div class="btmbox btmbox1">
-				<i class="btmIcon btmIcon1"></i>
-				<div>助手</div>
-			</div>
-			<div class="btmbox btmbox2">
-				<i class="btmIcon btmIcon2"></i>
-				<div>我的</div>
-			</div>
-		</div>
-
-	</body>
-	<script src="../static/common/zepto.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../static/common/mui/js/mui.min.js"></script>
-	<script type="text/javascript" charset="UTF-8">
-		mui.init();
-	</script>
-	<script src="../static/js/index.js?v=20160606" type="text/javascript" charset="utf-8"></script>
+<body>
+    <div class="user-header">
+        <i class="setting"></i>
+        <a href="#" class="head-info">
+            <div class="head-img">
+                <img src="../static/imgs/my-header.png" />
+            </div>
+            <div class="my-person-info">
+                <p class="my-head-name">昵称</p>
+                <p class="my-head-signature">签名：快人一步，快人一路......</p>
+            </div>
+            <i class="my-head-arrow"></i>
+        </a>
+    </div>
+    <div class="user-order">
+        <ul>
+            <li class="user-order-head">
+                <a href="#">
+                    <div class="user-title-name">我的订单</div>
+                    <div class="fr"><span class="user-title-sub">查看全部订单</span><i class="arrow-gray"></i></div>
+                </a>
+            </li>
+            <li class="user-order-content" style="display: none;">
+                <a href="#" class="user-order-two">
+                    <span class="orderimg assess-img"></span>
+                    <span class="order-name">评估订单</span>
+                </a>
+                <a href="#" class="user-order-two">
+                    <span class="orderimg loan-img"></span>
+                    <span class="order-name">贷款订单</span>
+                </a>
+            </li>
+            <li class="user-order-content">
+                <a href="#" class="user-order-three">
+                    <span class="orderimg assess-img"></span>
+                    <span class="order-name">评估订单</span>
+                </a>
+                <a href="#" class="user-order-three">
+                    <span class="orderimg loan-img"></span>
+                    <span class="order-name">贷款订单</span>
+                </a>
+                <a href="#" class="user-order-three">
+                    <span class="orderimg qiang-img"></span>
+                    <span class="order-name">我的抢单</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="user-assets">
+        <ul>
+            <li class="user-assets-head">
+                <div class="user-title-name">我的资产</div>
+                <a href="#" class="btn-withdraw">提现</a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="user-title-name">账户余额<i class="ml20 cred">0.00</i></div><i class="fr mt40 arrow-gray"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="user-assets-return clearfix">
+            <a href="#">
+                <span class="user-assets-num">0.00</span>
+                <br/>
+                <span class="user-assets-name">累计返佣</span>
+            </a>
+            <a href="#" class="user-assets-line">
+                <span class="user-assets-num">0.00</span>
+                <br/>
+                <span class="user-assets-name">代收返佣</span>
+            </a>
+            </li>
+        </div>
+    </div>
+    <div class="user-link">
+        <a href="#">
+            <div class="user-title-name">账单记录</div>
+            <div class="fr"><i class="arrow-gray"></i></div>
+        </a>
+    </div>
+    <div class="user-link">
+        <a href="#">
+            <div class="user-title-name">我的提现卡</div>
+            <div class="fr"><span class="user-title-sub">工商银行(1234)</span><i class="arrow-gray"></i></div>
+        </a>
+    </div>
+    <div class="user-link">
+        <a href="#">
+            <div class="user-title-name">云单中心</div>
+            <div class="fr"><span class="user-title-sub">3</span><i class="arrow-gray"></i></div>
+        </a>
+    </div>
+    <div class="user-link mb135">
+        <a href="#">
+            <div class="user-title-name">我的助理</div>
+            <div class="fr"><span class="user-title-sub">暗号2016-0102-33485</span><i class="arrow-gray"></i></div>
+        </a>
+    </div>
+    <div class="mask dn"></div>
+    <div class="pupView dn">
+        <div class="pupimg"></div>
+        <a href="#" class="pupView-btn">登录赚钱</a>
+        <a href="#" class="pupView-reg">注册拿钱去放贷</a>
+    </div>
+    <div class="fixedBottom">
+        <div class="btmbox btmbox0">
+            <i class="btmIcon btmIcon0"></i>
+            <div>云融</div>
+        </div>
+        <div class="btmbox btmbox1">
+            <i class="btmIcon btmIcon1"></i>
+            <div>助手</div>
+        </div>
+        <div class="btmbox btmbox2">
+            <i class="btmIcon btmIcon2"></i>
+            <div>我的</div>
+        </div>
+    </div>
+</body>
+<script src="../static/js/common.js"></script>
+<script src="../static/js/index.js"></script>
 
 </html>

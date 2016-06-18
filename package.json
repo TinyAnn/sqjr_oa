@@ -1,0 +1,53 @@
+{
+  "name": "rjs_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TinyAnn/rjsdemo.git"
+  },
+  "keywords": [
+    "rjs",
+    "requirejs"
+  ],
+  "author": "echo",
+  "license": "MIT",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cache": "^0.4.3",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-concat": "^2.6.0",
+    "gulp-csslint": "^0.3.0",
+    "gulp-group-files": "^2.0.0",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-imports": "0.0.3",
+    "gulp-jshint": "^2.0.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev": "^7.0.0",
+    "gulp-rev-collector": "^1.0.3",
+    "gulp-sass": "^2.3.1",
+    "gulp-uglify": "^1.5.3",
+    "gulp.spritesmith": "^6.2.1",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.1.0",
+    "ruby": "^0.6.0",
+    "run-sequence": "^1.1.5"
+  },
+  "bugs": {
+    "url": "https://github.com/TinyAnn/rjsdemo/issues"
+  },
+  "homepage": "https://github.com/TinyAnn/rjsdemo#readme"
+}
