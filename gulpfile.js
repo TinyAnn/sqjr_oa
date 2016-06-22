@@ -1,24 +1,25 @@
 var
-    gulp         = require('gulp'),
-    runSequence  = require('run-sequence'),
-    gulpif       = require('gulp-if'),
-    uglify       = require('gulp-uglify'),
-    csslint      = require('gulp-csslint'),
-    rev          = require('gulp-rev'),
-    jshint       = require('gulp-jshint'),
-    stylish      = require('jshint-stylish'),
+    gulp = require('gulp'),
+    runSequence = require('run-sequence'),
+    gulpif = require('gulp-if'),
+    uglify = require('gulp-uglify'),
+    csslint = require('gulp-csslint'),
+    rev = require('gulp-rev'),
+    jshint = require('gulp-jshint'),
+    stylish = require('jshint-stylish'),
     revCollector = require('gulp-rev-collector'),
-    minifyHtml   = require('gulp-minify-html'),
+    minifyHtml = require('gulp-minify-html'),
     autoprefixer = require('gulp-autoprefixer'),
-    del          = require('del'),
-    sass         = require('gulp-sass'),
-    cleanCSS     = require('gulp-clean-css'),
-    clean        = require('gulp-clean'),
-    imagemin     = require('gulp-imagemin'),
-    concat       = require('gulp-concat'),
-    path         = require('path'),
-    group        = require('gulp-group-files'),
-    gulpImports  = require('gulp-imports');
+    del = require('del'),
+    sass = require('gulp-sass'),
+    cleanCSS = require('gulp-clean-css'),
+    clean = require('gulp-clean'),
+    imagemin = require('gulp-imagemin'),
+    concat = require('gulp-concat'),
+    path = require('path'),
+    group = require('gulp-group-files'),
+    gulpImports = require('gulp-imports'),
+    spritesmith = require('gulp.spritesmith');
 
 var condition = true;
 
@@ -50,7 +51,7 @@ gulp.task('font:complie', function() {
 
 var imgFiles = {
     'img': {
-        src: "./src/static/imgs/**/*",
+        src: "./src/static/imgs/*.*",
         dest: "./dist/static/imgs/"
     }
 }
@@ -74,6 +75,28 @@ gulp.task('img:complie', function() {
             ))
     })();
 });
+
+var spiritImgFolders = {
+    "icons": {
+        src: "./src/static/imgs/icons/*"
+    }
+}
+var imgPath = "./src/static/imgs";
+
+gulp.task("img:spirit", function() {
+    return group(spiritImgFolders, function(key, fileset) {
+        return gulp.src(fileset.src)
+            .pipe(spritesmith({
+                imgName: "../imgs/icons.png", //保存合并后图片的地址
+                cssName: "../css/spirit/spirit_imgs.scss", //保存合并后对于css样式的地址
+                padding: 10, //合并时两个图片的间距
+                algorithm: "binary-tree", //top-down、left-right、diagonal、alt-diagonal、binary-tree
+                cssTemplate: "./src/static/configs/spirit_config.css" //css模板
+            }))
+            .pipe(gulp.dest(imgPath));
+    })();
+});
+
 
 
 var cssDest = "./dist/static/css/";
@@ -191,7 +214,7 @@ gulp.task('dev', ['clean'], function(done) {
 //正式构建
 gulp.task('build', ['clean'], function(done) {
     runSequence(
-        ['js:combo'], ['font:complie', 'img:complie', 'sass:compile', 'js:compile'], ['css:rev'], ['html:compile', 'rev:delFiles'],
+        ['js:combo', 'img:spirit'], ['font:complie', 'img:complie', 'sass:compile', 'js:compile'], ['css:rev'], ['html:compile', 'rev:delFiles'],
         done);
 });
 
@@ -202,7 +225,7 @@ gulp.task('coding', ['dev', 'watch']);
 gulp.task('watch', function() {
 
     gulp.watch(jsSrcFiles, ["js:compile"]);
-    gulp.watch("src/static/css/*", function(){
+    gulp.watch("src/static/css/*", function() {
         runSequence(['sass:compile'], ['css:rev']);
     });
 
